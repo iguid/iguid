@@ -1,0 +1,33 @@
+{
+    "name": "iguid/iguid",
+    "authors": [
+        {
+            "name": "i74ifa",
+            "email": "i74ifa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/i74ifa/php/iguid/framework",
+            "options": {
+                "versions": {
+                    "iguid/framework": "dev-main"
+                },
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "iguid/framework": "dev-main",
+        "symfony/debug": "^4.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
