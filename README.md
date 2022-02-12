@@ -12,3 +12,29 @@ And you can develop it
 
 + Fast Route
 + Simple Facade Class
+
+
+## view
+you can use view function or Viewer Class
+```php
+<?php
+namespace App\Http\Controllers;
+
+class HomeController extends Controller
+{
+
+	
+	public function index()
+	{
+		return view('welcome');
+	}
+	
+}
+?>
+```
+If you want to render without displaying the data, use ```render()```
+```php
+
+$welcomeView = view('welcome')->render();
+```
+It's a way to store the page in a variable for use elsewhere
